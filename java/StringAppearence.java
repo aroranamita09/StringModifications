@@ -1,3 +1,4 @@
+package com.stackroute;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,20 +10,7 @@ public class StringAppearence {
         Map<String, Boolean> hmap = new HashMap<>();
         Map<String, Integer> countMap = new HashMap<>();
         int freq = 0;
-        for(String str : strArr){
-            if(!countMap.containsKey(str)){
-                freq = 1;
-                countMap.put(str, freq);
-                hmap.put(str, false);
-            }
-            else{
-                int count = countMap.get(str);
-                count = count + 1;
-                countMap.put(str, count);
-                if (countMap.get(str) >= 2){
-                    hmap.put(str, true);
-                }
-            }
+        /*your code goes here*/
         }
         System.out.println(hmap);
         return hmap;
